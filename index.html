@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .font-bebas {
             font-family: 'Bebas Neue', sans-serif;
@@ -29,12 +32,12 @@
 <body>
     <header class="bg-[#FFFBF0]">
         <!-- HEADER CONTAINER  -->
-        <div class="max-w-6xl m-0 m-auto bg-[#FFFBF0]">
+        <div class="md:max-w-2xl lg:max-w-4xl xl:max-w-6xl m-0 m-auto bg-[#FFFBF0]">
             <nav>
                 <!-- NAV DIV  -->
-                <div class="flex justify-between items-center py-10">
-                    <img class="w-54 h-8 cursor-pointer" src="icons/logo.png" alt="">
-                    <ul class="flex space-x-10 cursor-pointer font-roboto">
+                <div class="flex flex-col md:flex-row justify-between items-center py-10">
+                    <img class="mb-4 xl:mb-0 w-54 h-8 cursor-pointer" src="icons/logo.png" alt="">
+                    <ul class="flex space-x-10 cursor-pointer font-roboto font-medium">
                         <li class="hover:text-[#85A019]">Home</li>
                         <li class="hover:text-[#85A019]">Product</li>
                         <li class="hover:text-[#85A019]">About us</li>
@@ -43,7 +46,107 @@
                 </div>
             </nav>
         </div>
+        <!-- BANNER SECTION   -->
+        <section>
+            <!-- BANNER CONTAINER  -->
+            <div
+                class="flex flex-col gap-4 md:flex-row max-w-2xl lg:max-w-4xl xl:max-w-6xl m-0 m-auto justify-between items-center">
+                <div class="text-center md:text-left lg:text-left xl:text-left space-y-3">
+                    <!-- BANNER DESCRIPTION  -->
+                    <h1 class="text-6xl md:text-7xl font-bebas text-[#FABE4C]">Be the Penguins <br>
+                        <span class="text-[#363958]">of Winter</span>
+                    </h1>
+                    <p class="text-[#3E3E3E] font-roboto text-base">Lorem Ipsum is simply dummy text of the printing
+                        <br>
+                        and typesetting industry.
+                    </p>
+                    <button
+                        class="font-roboto px-9 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>
+                        Buy
+                        Now</button>
+                </div>
+                <div>
+                    <!-- BANNER IMAGE  -->
+                    <img class="pr-14" src="images/model.png" alt="">
+                </div>
+            </div>
+        </section>
     </header>
 </body>
+<main>
+    <section>
+        <!-- WOMAN JACKET SECTION  -->
+        <div class="md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto py-10 space-y-3">
+            <!-- WOMAN JACKET SECTION CONTAINER  -->
+            <h1 class=" text-center md:text-left text-[#363958] font-bebas text-4xl">WOMAN JACKET</h1>
+            <div class="grid grid-cols-1 p-12 md:grid-cols-3 gap-3">
+                <!-- CARD SECTION DIV  -->
+                <div class="p-3 drop-shadow-lg">
+                    <!-- CARD-1 -->
+                    <div class="bg-gray-200 p-5">
+                        <img class="w-52 mx-auto" src="images/jacket-1.png" alt="">
+                    </div>
+                    <h2 class="font-roboto text-[#363958] text-base font-bold mt-4">Yellow Coat Jacket</h2>
+                    <p class="text-roboto text-sm text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto text-2xl font-black">$234</h2>
+                        <button
+                            class="md:font-roboto px-6 py-3 mt-3 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white">
+                            <i class="fa-solid fa-cart-shopping mr-2"></i>
+                            Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="p-3">
+                    <!-- CARD-2 -->
+                    <div class="bg-gray-200 p-5">
+                        <img class="w-52 mx-auto" src="images/jacket-2.png" alt="">
+                    </div>
+                    <h2 class="font-roboto text-[#363958] text-base font-bold mt-4">LADIES JACKET</h2>
+                    <p class="text-roboto text-sm text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto text-2xl mt-3 font-black">$234</h2>
+                        <button
+                            class="font-roboto px-6 py-3 mt-3 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white">
+                            <i class="fa-solid fa-cart-shopping mr-2"></i>
+                            Buy
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="p-3">
+                    <!-- CARD-3 -->
+                    <div class="bg-gray-200 p-5">
+                        <img class="w-52 mx-auto" src="images/jacket-3.png" alt="">
+                    </div>
+                    <h2 class="font-roboto text-[#363958] text-base font-bold mt-4">YWOMAN LEATHER JACKET</h2>
+                    <p class="text-roboto text-sm text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the <br>
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto text-2xl font-black">$234</h2>
+                        <button
+                            class="font-roboto px-6 py-3 mt-3 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white">
+                            <i class="fa-solid fa-cart-shopping mr-2"></i>
+                            Buy
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        </div>
+        </div>
+    </section>
+</main>
 
 </html>
