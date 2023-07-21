@@ -5,10 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
     <title>Penguin Fashion With Tailwind</title>
 </head>
-<body>
 
+<body>
+    <header class="bg-[#FFFBF0]">
+        <!-- HEADER CONTAINER  -->
+        <div class="max-w-6xl m-0 m-auto bg-[#FFFBF0]">
+            <nav>
+                <!-- NAV DIV  -->
+                <div class="flex justify-between items-center py-10">
+                    <img class="w-54 h-8 cursor-pointer" src="icons/logo.png" alt="">
+                    <ul class="flex space-x-10 cursor-pointer font-roboto">
+                        <li class="hover:text-[#85A019]">Home</li>
+                        <li class="hover:text-[#85A019]">Product</li>
+                        <li class="hover:text-[#85A019]">About us</li>
+                        <li class="hover:text-[#85A019]">Contact us</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 </body>
 
 </html>
